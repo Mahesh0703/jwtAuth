@@ -1,0 +1,35 @@
+package com.retail_syst.model;
+
+public class JwtRequest {
+
+	String userName;
+	String password;
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public JwtRequest(String userName, String password) {
+		super();
+		this.userName = userName;
+		this.password = password;
+	}
+	public JwtRequest() {
+		super();
+		
+	}
+	@Override
+	public String toString() {
+		return "JwtRequestVo [userName=" + userName + ", password=" + password + "]";
+	}
+	
+	
+	
+}
